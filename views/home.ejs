@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!-- Importação do cabeçalho -->
 <%- include('partials/header.ejs') %>
     <!-- Importação Navbar -->
     <%-include('partials/navbar-menu.ejs') %>
 
         <title>Home</title>
+
         <body>
+            <!-- Tela de alerta -->
+            <%- include('partials/alert.ejs')%>
+            <!-- Fim da tela de alerta -->
             <p>Página Home</p>
-            <button class="btn btn-primary">Olá mundo</button>
         </body>
         <!-- Importação do rodapé -->
-        <%- include('partials/footer.ejs')%>
+        <%- include('partials/scripts.ejs')%>
+
 </html>
