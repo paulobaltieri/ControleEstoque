@@ -14,6 +14,9 @@ app.get('/', (req, res) => {
 app.get('/home', (req, res) => {
     res.render('home.ejs')
 })
+app.get('/produtos',(req,res)=>{
+    res.render('produtos')
+})
 //Iniciando aplicação
 app.listen(3000, () => {
     console.log('Aplicação iniciada 🚀 ')

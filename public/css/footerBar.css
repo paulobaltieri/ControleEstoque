@@ -1,0 +1,9 @@
+.text-center{
+  background-color: rgb(29, 29, 29);
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
