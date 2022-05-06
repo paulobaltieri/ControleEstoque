@@ -5,12 +5,15 @@
     <!-- Importação Navbar -->
     <%-include('partials/navbar-menu.ejs') %>
         <title>Home</title>
+
         <body>
             <!-- Tela de alerta -->
             <%- include('partials/msgAlerta/alert.ejs')%>
-            <!-- Fim da tela de alerta -->
-            <p>Página Home</p>
+                <!-- Fim da tela de alerta -->
+                <p>Página Home</p>
         </body>
         <!-- Importação do rodapé -->
+        <%-include('./partials/footerbar.ejs')%>
         <%- include('partials/scripts.ejs')%>
+
 </html>
