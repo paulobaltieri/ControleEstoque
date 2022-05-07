@@ -1,9 +1,17 @@
 .text-center{
-  background-color: rgb(29, 29, 29);
   bottom: 0;
   left: 0;
-  height: 60px;
+  margin-top: auto;
+  padding-bottom: 50em;
+  height: 40px;
   position: fixed;
   width: 100%;
+  background-color: rgba(33,36,41,255);
   color: white;
+}
+.teste{
+  background-color: red;
+  padding: auto;
+  padding-bottom: 50px;
+  margin-bottom: 50%;
 }
