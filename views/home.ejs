@@ -2,15 +2,23 @@
 <html lang="en">
 <!-- Importação do cabeçalho -->
 <%- include('partials/header/header.ejs') %>
+    <link rel="stylesheet" href="../css/home.css">
     <!-- Importação Navbar -->
     <%-include('partials/navbar/navbar-menu.ejs') %>
         <title>Home</title>
 
         <body>
+
             <!-- Tela de alerta -->
-            <%- include('partials/msgAlerta/alert.ejs')%>
-                <!-- Fim da tela de alerta -->
-                <p>Página Home</p>
+            <!-- <%- include('partials/msgAlerta/alert.ejs')%> -->
+            <!-- Fim da tela de alerta -->
+            <br>
+                <br>
+                <!-- Cards que conterá informações sobre os produtos -->
+                <!--   <%- include('./partials/card/card.ejs')%> -->
+                <div class="fundoHome">
+                    <img src="../img/starHome.png" alt="">Constellation
+                </div>
         </body>
         <!-- Importação do rodapé -->
         <%-include('./partials/footer/footerBarhome.ejs')%>
