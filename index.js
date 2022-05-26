@@ -9,16 +9,19 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    res.render('screenPassword.ejs')
+    res.render('login.ejs')
 })
 app.get('/home', (req, res) => {
     res.render('home.ejs')
 })
-app.get('/usuarios',(req,res)=>{
-    res.render('usuarios')
+app.get('/usuario', (req, res) => {
+    res.render('usuario')
 })
-app.get('/produtos',(req,res)=>{
-    res.render('produtos')
+app.get('/produto', (req, res) => {
+    res.render('produto')
+})
+app.get('/fornecedor', (req, res) => {
+    res.render('fornecedor')
 })
 //Iniciando aplicação
 app.listen(3000, () => {
