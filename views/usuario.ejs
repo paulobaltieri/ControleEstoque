@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="/css/usuario.css">
     <!-- Importação Navbar -->
     <%-include('partials/navbar/navbar.ejs') %>
-
         <body>
             <title>Home</title>
             <!-- Barra de titulo do sistema -->
@@ -16,38 +15,38 @@
             <div class="card">
                 <form class="row g-3">
                     <div class="col-md-4">
-                        <label for="validationDefault01" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Luis Priscilo" required>
                     </div>
                     <div class="col-md-4">
-                        <label for="validationDefault02" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                        <label for="inputSobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Otto" required>
                     </div>
                     <div class="col-md-4">
                         <label for="validationDefaultUsername" class="form-label">E-mail</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="validationDefaultUsername"
+                        <div class="inputEmail">
+                            <input type="text" class="form-control" id="inputEmail"
                                 aria-describedby="inputGroupPrepend2" required>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="validationDefault03" class="form-label">Rua</label>
-                        <input type="text" class="form-control" id="validationDefault03" required>
+                        <label for="inputRua" class="form-label">Rua</label>
+                        <input type="text" class="form-control" id="inputRua" required>
                     </div>
                     <div class="col-md-2">
-                        <label for="validationDefault03" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="validationDefault03" required>
+                        <label for="inputBairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" id="inputBairro" required>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationDefault04" class="form-label">State</label>
-                        <select class="form-select" id="validationDefault04" required>
-                            <option selected disabled value="">Choose...</option>
+                        <label for="inputEstado" class="form-label">Estado</label>
+                        <select class="form-select" id="inputEstado" required>
+                            <option selected disabled value="">Selecione...</option>
                             <option>...</option>
                         </select>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationDefault05" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="validationDefault05" required>
+                        <label for="inputCep" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="inputCep" required>
                     </div>
                 </form>
             </div>

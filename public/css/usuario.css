@@ -1,20 +1,5 @@
 /* Campos form */
-.inputNome {
-  width: 160;
-}
-.inputSobrenome {
-  width: 380;
-}
-.inputNascimento {
-  width: 320;
 
-}
-#inputEndereco {
-  width: 360px;
-}
-#inputBairro {
-  width: 160px;
-}
 /* Fim form */
 .buttonProduto {
   text-align: end;
