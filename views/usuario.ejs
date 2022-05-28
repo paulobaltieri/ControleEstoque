@@ -16,35 +16,43 @@
                 <form class="row g-3">
                     <div class="col-md-4">
                         <label for="inputNome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="inputNome" placeholder="Luis Priscilo" required>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Ex: Luis Priscilo" required>
                     </div>
                     <div class="col-md-4">
                         <label for="inputSobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Otto" required>
-                    </div>
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Ex: Pinto Santos" required>
+                    </div><br/>
                     <div class="col-md-4">
                         <label for="validationDefaultUsername" class="form-label">E-mail</label>
                         <div class="inputEmail">
-                            <input type="text" class="form-control" id="inputEmail"
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Ex: emailusuario@gmail.com"
                                 aria-describedby="inputGroupPrepend2" required>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2">
+                        <label for="inputTel" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="inputTel" placeholder="Ex: 71 9999-9999" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputCelular" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" id="inputCelular" placeholder="Ex: 71 9 9999-9999" required>
+                    </div>
+                    <div class="col-md-5">
                         <label for="inputRua" class="form-label">Rua</label>
-                        <input type="text" class="form-control" id="inputRua" required>
+                        <input type="text" class="form-control" id="inputRua" placeholder="Ex: Rua bonossoro lulis nº 1713" required>
                     </div>
                     <div class="col-md-2">
                         <label for="inputBairro" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputBairro" required>
+                        <input type="text" class="form-control" id="inputBairro" placeholder="Ex: Flores" required>
                     </div>
                     <div class="col-md-3">
                         <label for="inputEstado" class="form-label">Estado</label>
                         <select class="form-select" id="inputEstado" required>
-                            <option selected disabled value="">Selecione...</option>
+                            <option selected disabled value="">Selecione</option>
                             <option>...</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label for="inputCep" class="form-label">CEP</label>
                         <input type="text" class="form-control" id="inputCep" required>
                     </div>
