@@ -20,3 +20,12 @@
 .btn-success{
   background-color: #4CAF50;
 }
+.imgProd{
+  width: auto;
+  text-align: end;
+  justify-content: end;
+  align-items: flex-end;
+  border-width: 5px;
+  border-style: solid; 
+  border-color:  blue;
+}
