@@ -2,6 +2,7 @@
 <%- include('partials/header/header.ejs') %>
     <!-- barra superior contendo o csss do titulo -->
     <link rel="stylesheet" href="/css/usuario.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Importação Navbar -->
 <%-include('partials/navbar/navbar.ejs') %>
         <body>
@@ -13,7 +14,7 @@
                 </div>
             </div>
             <div class="card">
-                <form class="row g-3" action="/alert" method="POST">
+                <form class="row g-3" action="/salvarFormulario" method="POST">
                     <div class="col-md-4">
                         <label for="inputNome" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="inputNome" name="inputNome"
@@ -68,6 +69,7 @@
                 <button class="btn btn-danger" id="btn-danger" type="submit">Cancelar</button>
             </div>
             </form>
+
         </body>
         <!-- Importação do rodapé -->
 <%-include('./partials/footer/footerBarhome.ejs')%>

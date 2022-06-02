@@ -10,11 +10,9 @@ router.get('/home', (req, res) => {
 router.get('/usuario', (req, res) => {
     res.render('usuario')
 })
-router.post('/alert',(req,res)=>{
-    res.redirect('usuario')
+router.post('/salvarFormulario',(req,res)=>{
+    res.send('Dados Salvos com sucesso')
 })
-
-
 router.get('/produto', (req, res) => {
     res.render('produto')
 })
