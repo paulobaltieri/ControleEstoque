@@ -4,6 +4,9 @@ const ejs = require('ejs')
 const bodyParser = require('body-parser')
 const connection = require('./database/database')
 
+const controller = require('./controller/controllers')
+
+
 //Informando ao EXPRESS a engine que estou utilizando
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
@@ -22,22 +25,9 @@ connection
         console.log(error , 'Falha na conexão 👎 ')
     })
 
-//rotas
-app.get('/', (req, res) => {
-    res.render('login.ejs')
-})
-app.get('/home', (req, res) => {
-    res.render('home.ejs')
-})
-app.get('/usuario', (req, res) => {
-    res.render('usuario')
-})
-app.get('/produto', (req, res) => {
-    res.render('produto')
-})
-app.get('/fornecedor', (req, res) => {
-    res.render('fornecedor')
-})
+app.use('/',controller)
+
+
 //Iniciando aplicação
 app.listen(3000, () => {
     console.log('Aplicação iniciada 🚀 ')
