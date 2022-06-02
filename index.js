@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const connection = require('./database/database')
 const controller = require('./controller/controllers')
-const Post =  require('./models/Post')
+const post =  require('./models/Post')
 
 
 //Informando ao EXPRESS a engine que estou utilizando

@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 const connect = require('../database/database')
-const Post = connect.define('usuario', {
+const post = connect.define('usuario', {
     name: {
         type: Sequelize.STRING,
         allowNull: false
@@ -39,7 +39,9 @@ const Post = connect.define('usuario', {
     }
 });
 
-Post.sync({ force: false })
+post.sync({ force: false })
     .then(() => {
-        console.log('Tabela criada com sucesso!')
+        console.log('Tabela criada com sucesso! 👍 ')
     });
+
+module.exports = post    
