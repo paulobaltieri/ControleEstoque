@@ -3,8 +3,9 @@
   margin:0;
 }
 /* Fim form */
-.buttonProduto {
+.buttonUsuario {
   text-align: end;
+  padding: 1em;
 }
 .titlePage {
   font-size: 25px;
