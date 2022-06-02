@@ -1,7 +1,45 @@
-const database = require('../database/database')
-
-const Post = database.connection.define('usuario',{
-    nome:{
-        type:database
+const Sequelize = require('sequelize')
+const connect = require('../database/database')
+const Post = connect.define('usuario', {
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    middlename: {
+        type: Sequelize.TEXT,
+        allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    telephone: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    cellphone: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    street: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    district: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    state: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    cep: {
+        type: Sequelize.STRING,
+        allowNull: false
     }
-})
+});
+
+Post.sync({ force: false })
+    .then(() => {
+        console.log('Tabela criada com sucesso!')
+    });

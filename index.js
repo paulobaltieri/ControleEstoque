@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express()
-const ejs = require('ejs')
 const bodyParser = require('body-parser')
 const connection = require('./database/database')
-
 const controller = require('./controller/controllers')
+const Post =  require('./models/Post')
 
 
 //Informando ao EXPRESS a engine que estou utilizando

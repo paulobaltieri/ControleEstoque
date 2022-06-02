@@ -17,12 +17,12 @@
                 <form class="row g-3" action="/salvarFormulario" method="POST">
                     <div class="col-md-4">
                         <label for="inputNome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="inputNome" name="inputNome"
+                        <input type="text" class="form-control" id="inputNome" name="name"
                             placeholder="Ex: Luis Priscilo" >
                     </div>
                     <div class=" col-md-4">
                         <label for="inputSobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Ex: Pinto Santos"
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Ex: Pinto Santos" name="middlename"
                             >
                     </div>
                     <div class="espaço">
@@ -31,37 +31,36 @@
                         <div class="inputEmail">
                             <label for="validationDefaultUsername" class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="inputEmail"
-                                placeholder="Ex: emailusuario@gmail.com" aria-describedby="inputGroupPrepend2" >
+                                placeholder="Ex: emailusuario@gmail.com" aria-describedby="inputGroupPrepend2" name="email">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label for="inputTel" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="inputTel" placeholder="Ex: 71 9999-9999" >
+                        <input type="tel" class="form-control" id="inputTel" placeholder="Ex: 71 9999-9999" name="telephone">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCelular" class="form-label">Celular</label>
-                        <input type="tel" class="form-control" id="inputCelular" placeholder="Ex: 71 9 9999-9999"
-                            >
+                        <input type="tel" class="form-control" id="inputCelular" placeholder="Ex: 71 9 9999-9999" name="cellphone">
                     </div>
                     <div class="col-md-5">
                         <label for="inputRua" class="form-label">Rua</label>
                         <input type="text" class="form-control" id="inputRua"
-                            placeholder="Ex: Rua bonossoro lulis nº 1713" >
+                            placeholder="Ex: Rua bonossoro lulis nº 1713" name="street">
                     </div>
                     <div class="col-md-2">
                         <label for="inputBairro" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputBairro" placeholder="Ex: Flores" >
+                        <input type="text" class="form-control" id="inputBairro" placeholder="Ex: Flores" name="district" >
                     </div>
                     <div class="col-md-3">
                         <label for="inputEstado" class="form-label">Estado</label>
-                        <select class="form-select" id="inputEstado" >
+                        <select class="form-select" id="inputEstado" name="state">
                             <option selected disabled value="">Selecione</option>
                             <option>...</option>
                         </select>
                     </div>
                     <div class="col-md-2">
                         <label for="inputCep" class="form-label">CEP</label>
-                        <input type="text" class="form-control" id="inputCep" >
+                        <input type="text" class="form-control" id="inputCep" name="cep">
                     </div>
             </div>
             <div class="buttonUsuario">

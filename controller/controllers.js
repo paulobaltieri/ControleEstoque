@@ -11,7 +11,16 @@ router.get('/usuario', (req, res) => {
     res.render('usuario')
 })
 router.post('/salvarFormulario',(req,res)=>{
-    res.send('Dados Salvos com sucesso')
+    let name = req.body.name
+    let middlename = req.body.middlename
+    let email = req.body.email
+    /* let telephone = req.body.telephone
+    let cellphone = req.body.cellphone
+    let street = req.body.street
+    let district = req.body.district
+    let state = req.body.state
+    let cep = req.body.cep */
+    res.send(`${name} ${middlename} ${email} ${telephone}`)
 })
 router.get('/produto', (req, res) => {
     res.render('produto')
