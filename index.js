@@ -4,6 +4,9 @@ const bodyParser = require('body-parser')
 const connection = require('./database/database')
 const controller = require('./controller/controllers')
 const post =  require('./models/Post')
+const session = require('express-session')
+const flush = require('connect-flash')
+
 
 
 //Informando ao EXPRESS a engine que estou utilizando
@@ -13,6 +16,16 @@ app.use(express.static('public'))
 //body parser
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
+ 
+// flash message
+app.use(session({
+   secret: 'secret',
+   cookie: {maxAge: 600000} ,
+   resave: false,
+   saveUninitialized: false
+}))
+app.use(flush())
+
 
 //database
 connection

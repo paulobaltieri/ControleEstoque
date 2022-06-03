@@ -1,3 +1,4 @@
+const flash = require('connect-flash/lib/flash')
 const express = require('express')
 const router = express.Router()
 const post = require('../models/Post')
@@ -9,7 +10,7 @@ router.get('/home', (req, res) => {
     res.render('home')
 })
 router.get('/usuario', (req, res) => {
-    res.render('usuario')
+    res.render('usuario',{ message: req.flash('message')})
 })
 router.post('/salvarFormulario', (req, res) => {
     let name = req.body.name
@@ -33,6 +34,7 @@ router.post('/salvarFormulario', (req, res) => {
         state: state,
         cep: cep,
     }).then(()=>{
+        req.flash('message','Informações salvas com ')
         res.redirect('Usuario')  
     })
 })

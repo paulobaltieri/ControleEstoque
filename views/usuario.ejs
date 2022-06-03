@@ -13,6 +13,12 @@
                     USUÁRIO
                 </div>
             </div>
+        <% if(message.length > 0) {%>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <%= message %><strong>SUCESSO 😎</strong> 
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        <% }%>    
             <div class="card">
                 <form class="row g-3" action="/salvarFormulario" method="POST">
                     <div class="col-md-4">
@@ -30,7 +36,7 @@
                         <div class="inputEmail">
                             <label class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="inputEmail"
-                                placeholder="Ex: emailusuario@gmail.com" aria-describedby="inputGroupPrepend2" name="email" required>
+                            placeholder="Ex: emailusuario@gmail.com" aria-describedby="inputGroupPrepend2" name="email" required>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -92,7 +98,6 @@
                 <button class="btn btn-danger" id="btn-danger" type="submit">Cancelar</button>
             </div>
             </form>
-
         </body>
         <!-- Importação do rodapé -->
 <%-include('./partials/footer/footerBarhome.ejs')%>
