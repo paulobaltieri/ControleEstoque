@@ -18,12 +18,11 @@
                     <div class="col-md-4">
                         <label for="inputNome" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="inputNome" name="name"
-                            placeholder="Ex: Luis Priscilo" >
+                            placeholder="Ex: Luis Priscilo" required>
                     </div>
                     <div class=" col-md-4">
                         <label for="inputSobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Ex: Pinto Santos" name="middlename"
-                            >
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Ex: Pinto Santos" name="middlename" required>
                     </div>
                     <div class="espaço">
                     </div>
@@ -31,36 +30,61 @@
                         <div class="inputEmail">
                             <label for="validationDefaultUsername" class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="inputEmail"
-                                placeholder="Ex: emailusuario@gmail.com" aria-describedby="inputGroupPrepend2" name="email">
+                                placeholder="Ex: emailusuario@gmail.com" aria-describedby="inputGroupPrepend2" name="email" required>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label for="inputTel" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="inputTel" placeholder="Ex: 71 9999-9999" name="telephone">
+                        <input type="tel" class="form-control" id="inputTel" placeholder="Ex: 71 9999-9999" name="telephone" required>
                     </div>
                     <div class="col-md-2">
                         <label for="inputCelular" class="form-label">Celular</label>
-                        <input type="tel" class="form-control" id="inputCelular" placeholder="Ex: 71 9 9999-9999" name="cellphone">
+                        <input type="tel" class="form-control" id="inputCelular" placeholder="Ex: 71 9 9999-9999" name="cellphone" required>
                     </div>
                     <div class="col-md-5">
                         <label for="inputRua" class="form-label">Rua</label>
-                        <input type="text" class="form-control" id="inputRua"
-                            placeholder="Ex: Rua bonossoro lulis nº 1713" name="street">
+                        <input type="text" class="form-control" id="inputRua"  placeholder="Ex: Rua bonossoro lulis nº 1713" name="street" required>
                     </div>
                     <div class="col-md-2">
                         <label for="inputBairro" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputBairro" placeholder="Ex: Flores" name="district" >
+                        <input type="text" class="form-control" id="inputBairro" placeholder="Ex: Flores" name="district" required>
                     </div>
                     <div class="col-md-3">
                         <label for="inputEstado" class="form-label">Estado</label>
-                        <select class="form-select" id="inputEstado" name="state">
+                        <select class="form-select" id="inputEstado" name="state" required>
                             <option selected disabled value="">Selecione</option>
-                            <option>...</option>
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Distrito Federal</option>
+                            <option>Espírito Santo</option>
+                            <option>Goiás</option>
+                            <option>Maranhão</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                            <option>Minas Gerais</option>
+                            <option>Pará</option>
+                            <option>Paraíba </option>
+                            <option>Paraná</option>
+                            <option>Pernambuco</option>
+                            <option>Piauí</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Rio Grande do Sul </option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Santa Catarina</option>
+                            <option>São Paulo </option>
+                            <option>Sergipe</option>
+                            <option>Tocantins</option>
                         </select>
                     </div>
                     <div class="col-md-2">
-                        <label for="inputCep" class="form-label">CEP</label>
-                        <input type="text" class="form-control" id="inputCep" name="cep">
+                        <label class="form-label">CEP</label>
+                        <input type="number" class="form-control" id="inputCep" name="cep" required>
                     </div>
             </div>
             <div class="buttonUsuario">
