@@ -33,9 +33,8 @@ router.post('/salvarFormulario', (req, res) => {
         state: state,
         cep: cep,
     }).then(()=>{
-        res.redirect('Usuario')
+        res.redirect('Usuario')  
     })
-
 })
 router.get('/produto', (req, res) => {
     res.render('produto')
