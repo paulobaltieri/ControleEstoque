@@ -7,8 +7,6 @@ const post =  require('./models/Post')
 const session = require('express-session')
 const flush = require('connect-flash')
 
-
-
 //Informando ao EXPRESS a engine que estou utilizando
 app.set('view engine', 'ejs')
 app.use(express.static('public'))

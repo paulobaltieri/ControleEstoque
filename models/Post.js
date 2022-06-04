@@ -14,11 +14,11 @@ const post = connect.define('usuario', {
         allowNull: false
     },
     telephone: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         allowNull: false
     },
     cellphone: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         allowNull: false
     },
     street: {
